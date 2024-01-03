@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="213.0" prefWidth="285.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.app.client.controller.LoginFormController">
+    <children>
+        <TextField fx:id="txtName" alignment="CENTER" layoutX="43.0" layoutY="113.0" promptText="Eg. John Smith">
+            <font>
+                <Font name="Ubuntu" size="16.0" />
+            </font></TextField>
+        <Button fx:id="btnJoin" defaultButton="true" layoutX="105.0" layoutY="154.0" mnemonicParsing="false" onAction="#btnJoinOnAction" prefHeight="29.0" prefWidth="74.0" text="Join">
+            <font>
+                <Font name="Ubuntu" size="16.0" />
+            </font></Button>
+        <Label alignment="CENTER" layoutX="43.0" layoutY="78.0" prefHeight="19.0" prefWidth="197.0" text="Enter your name">
+            <font>
+                <Font name="Ubuntu" size="16.0" />
+            </font>
+        </Label>
+        <FlowPane alignment="CENTER" layoutX="43.0" layoutY="14.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <children>
+                <HBox alignment="CENTER" spacing="5.0">
+                    <children>
+                        <ImageView fitHeight="51.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../asset/img/chat.png" />
+                            </image>
+                        </ImageView>
+                        <Label text="Text Chat App">
+                            <font>
+                                <Font name="Ubuntu Bold" size="20.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+            </children>
+        </FlowPane>
+    </children>
+</AnchorPane>
